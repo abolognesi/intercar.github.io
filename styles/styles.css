@@ -1,0 +1,301 @@
+:root {
+    --grey-color: #4F4E50;
+    --green-color: #CBD400;
+  }
+@import url(../fonts/stylesheet.css);
+body{
+    background-color: var(--grey-color);
+    font-family: 'Antenna';
+}
+/*---------HEADER-------*/
+.bg-green{
+    background-color: var(--green-color);
+    background: rgba(203, 212, 0, 0.8);
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-brand{
+    padding-top: 2rem;
+    padding-left: 3.5rem;
+}
+.navbar > .container{
+    margin-top: 0;
+}
+.navbar > .container > div{
+    padding-right: 10rem;
+}
+.navbar-toggler{
+    border: none;
+    background-color: var(--grey-color);
+    border-radius: 0;
+    top: 0;
+    padding-left: 1.5rem;
+    padding-top: 3.1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+}
+.navbar-toggler-icon{
+    background-image: url(../img/menu.svg);
+    width: 2.6rem;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.logos-header{
+    margin-right: 1rem;
+}
+.logos-header-last{
+    margin-right: 3rem;
+}
+.offcanvas{
+    background-color: var(--green-color);
+}
+/*---------HEADER-------*/
+/*---------CAROUSEL-------*/
+.whatsapp{
+    position: fixed;
+    bottom: 10rem;
+    right: 27rem;
+    z-index: 10;
+}
+.carousel-control-prev {
+    left: 10rem;
+}
+.carousel-control-next {
+    right: 20rem;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 3rem;
+    width: 3rem;
+}
+.carousel-caption{
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    width: 37%;
+    background-color: var(--green-color);
+    padding: 10% 0 0 20%;
+}
+.carousel-caption > h5{
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    width: 40rem;
+    font-weight: bold;
+}
+.carousel-caption > p{
+    font-size: 1.2rem;
+    color: var(--grey-color);
+    margin-top: 2rem;
+}
+.carousel-caption > a{
+    margin-top: 3rem;
+}
+/*---------CAROUSEL-------*/
+/*---------HISTORY-------*/
+#historia{
+    margin-top: 0.5rem;
+}
+#historia > p{
+    padding-top: 4rem;
+    padding-left: 5rem;
+    color: white;
+    width: 54rem;
+    padding-bottom: 2rem;
+}
+#historia > img:last-child{
+    width: 60%;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+/*---------HISTORY-------*/
+/*---------MISION-VISION-------*/
+.vision{
+    color: white;
+}
+.mision{
+    color: var(--grey-color);
+}
+#mision-vision > div > article > div{
+    padding: 2rem;
+}
+#mision-vision > div > article > div > h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+#mision-vision > div > article > div > p{
+    width: 20rem;
+}
+#mision-vision > div > article{
+    padding: 0;
+}
+#mision-vision > div > article:nth-child(2){
+    background-color: var(--green-color);
+}
+/*---------MISION-VISION-------*/
+/*---------EMPRESAS-------*/
+#empresas{
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+}
+#empresas > div > article{
+    margin-top: 4rem;
+}
+#empresas > div > article > p{
+    margin-top: 2rem;
+}
+#empresas > div > article > p > img{
+    margin-top: -10px;
+}
+/*---------EMPRESAS-------*/
+/*---------NUESTRAS-MARCAS-------*/
+#nuestras-marcas{
+    text-align: center;
+}
+img#wildbrake{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.wildbrake > article{
+    padding: 0;
+}
+.wildbrake > article > h4{
+    color: var(--green-color);
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.wildbrake > article > p{
+    padding-top: 1rem;
+    color: white;
+    text-align: left;
+    font-weight: 300;
+}
+.wildbrake > article > img{
+    width: 100%;
+}
+article.a-right{
+    padding: 4.5rem 14rem 0 4.5rem;
+    max-height: 22rem;
+} 
+article.a-left{
+    padding: 4.5rem 4.5rem 0 14rem;
+    max-height: 22rem;
+}
+#undercar{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.undercar > article{
+    margin-bottom: 2.5rem;
+}
+/*---------NUESTRAS-MARCAS-------*/
+/*---------LINEAS-------*/
+#lineas{
+    background-color: var(--green-color);
+    padding: 5rem 10rem;
+    text-align: center;
+}
+#lineas > img{
+    width: 90%;
+}
+#lineas > h2{
+    font-weight: bold;
+    color: var(--grey-color);
+    font-size: 3rem;
+    text-align: left;
+    padding-left: 4rem;
+
+}
+/*---------LINEAS-------*/
+/*---------CONTACTO-------*/
+#contacto{
+    padding: 5rem 13rem;
+}
+#contacto > div{
+    margin-top: 5rem;
+}
+#contacto h2{
+    text-transform: uppercase;
+    color: var(--green-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+#contacto input{
+    background-color: var(--grey-color);
+    border: 1px solid white;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#contacto textarea{
+    background-color: var(--grey-color);
+    border: 1px solid white;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    width: 100%;
+    height: 5.8rem;
+}
+#contacto input[type="submit"]{
+    background-color: var(--green-color);
+    width: auto;
+    padding: 0.5rem 3rem;
+    color: var(--grey-color);
+    border: 1px solid var(--green-color);
+    margin-top: 0.7rem;
+}
+div.a-right{
+    text-align: right;
+}
+#contacto h6{
+    font-weight: bold;
+    color: var(--green-color);
+}
+#contacto p{
+    color: white;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+#contacto a{
+    color: var(--green-color);
+    text-decoration: none;
+}
+#contacto a:hover{
+    color: white;
+}
+#contacto a.mail{
+    color: white;
+}
+#contacto a.mail:hover{
+    color: var(--green-color);
+}
+/*---------CONTACTO-------*/
+/*---------FOOTER-------*/
+footer{
+    padding-left: 10rem;
+}
+footer ul{
+    list-style: none;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+footer a:hover{
+    color: var(--green-color);
+}
+/*---------FOOTER-------*/
+
