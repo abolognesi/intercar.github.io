@@ -23,9 +23,6 @@ body{
 .navbar > .container{
     margin-top: 0;
 }
-.navbar > .container > div{
-    padding-right: 10rem;
-}
 .navbar-toggler{
     border: none;
     background-color: var(--grey-color);
