@@ -61,12 +61,17 @@ body{
     right: 27rem;
     z-index: 10;
 }
-.carousel-control-prev {
+.carousel-item{
+    min-height: 89vh;
+    background-position: center;
+    background-size: cover;
+}
+/*.carousel-control-prev {
     left: 10rem;
 }
 .carousel-control-next {
     right: 20rem;
-}
+}*/
 .carousel-control-next-icon, .carousel-control-prev-icon {
     height: 3rem;
     width: 3rem;
@@ -77,7 +82,7 @@ body{
     bottom: 0;
     left: 0;
     text-align: left;
-    width: 37%;
+    width: 36vw;
     background-color: var(--green-color);
     padding: 10% 0 0 20%;
 }
@@ -100,11 +105,14 @@ body{
 #historia{
     margin-top: 0.5rem;
 }
+#historia > img{
+    max-width: 1107px;
+}
 #historia > p{
     padding-top: 4rem;
     padding-left: 5rem;
     color: white;
-    width: 54rem;
+    width: 70%;
     padding-bottom: 2rem;
 }
 #historia > img:last-child{
@@ -116,9 +124,14 @@ body{
 /*---------MISION-VISION-------*/
 .vision{
     color: white;
+    overflow: hidden;
 }
 .mision{
     color: var(--grey-color);
+    overflow: hidden;
+}
+.mision img{
+    max-height: 13rem;
 }
 #mision-vision > div > article > div{
     padding: 2rem;
@@ -146,14 +159,21 @@ body{
     font-size: 1.4rem;
     margin-bottom: 5rem;
 }
-#empresas > div > article{
+.logos-empresas{
+    max-height: 314px;
+}
+#empresas > div > div > article{
     margin-top: 4rem;
 }
-#empresas > div > article > p{
+#empresas > div > div > article > p{
     margin-top: 2rem;
 }
-#empresas > div > article > p > img{
+#empresas > div > div > article > p > img{
     margin-top: -10px;
+    margin-right: 0.5rem;
+}
+#empresas > div > div > article.badaloni > p{
+    margin-top: 1rem;
 }
 /*---------EMPRESAS-------*/
 /*---------NUESTRAS-MARCAS-------*/
@@ -163,6 +183,7 @@ body{
 img#wildbrake{
     margin-top: 5rem;
     margin-bottom: 5rem;
+    width: 35%;
 }
 .wildbrake > article{
     padding: 0;
@@ -213,7 +234,6 @@ article.a-left{
     font-size: 3rem;
     text-align: left;
     padding-left: 4rem;
-
 }
 /*---------LINEAS-------*/
 /*---------CONTACTO-------*/
@@ -299,3 +319,99 @@ footer a:hover{
 }
 /*---------FOOTER-------*/
 
+/*===============MOBILE===============*/
+@media (max-width: 1123px) {
+    .logos-header, .logos-header-last{
+        display: none;
+    }
+    .carousel-caption{
+        width: 50vw;
+    }
+    .carousel-caption > h5{
+        font-size: 2.8rem;
+        margin-top: 10vh;
+        width: 30rem;
+    }
+    #lineas > h2{
+        font-size: 2.5rem;
+    }
+    article.a-right {
+        padding: 3.5rem 1rem 0 4.5rem;
+    }
+    article.a-left {
+        padding: 3.5rem 4.5rem 0 1rem;
+    }
+    .wildbrake > article > h4 {
+        font-size: 1.2rem;
+    }
+    .offcanvas{
+        --bs-offcanvas-width: 600px;
+    }
+    .offcanvas-header{
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 575.98px) {
+    .carousel-caption{
+        width: 70vw;
+    }
+    .carousel-caption > h5{
+        width: 25rem;
+        font-size: 2.4rem;
+        margin-top: 18vh;
+    }
+    .navbar-brand{
+        padding-top: 1rem;
+        padding-left: 3rem;
+    }
+    .navbar > .container{
+        display: block;
+        padding-left: 0;
+    }
+    .offcanvas.offcanvas-end{
+        right: auto;
+    }
+    .logos-header, .logos-header-last{
+        display: none;
+    }
+    #depositos{
+        width: 100%;
+    }
+    img#wildbrake{
+        width: 70%;
+    }
+    article.a-right{
+        padding: 1.5rem 4rem 0 4.5rem;
+        max-height: 46rem;
+    } 
+    article.a-left{
+        padding: 4.5rem 4.5rem 0 4rem;
+        max-height: 46rem;
+    }
+    img#undercar{
+        width: 70%;
+    }
+    .undercar > article > img{
+        width: 100%;
+    }
+    #lineas{
+        padding: 2rem 1rem;
+    }
+    #lineas > h2{ 
+        padding: 1rem 0.5rem;
+        font-size: 2rem;
+    }
+    #contacto {
+        padding: 4rem 2rem;
+    }
+    .sm-none{
+        display: none;
+    }
+    .botonera{
+        margin-top: -6.1rem;
+        margin-right: 5rem;
+    }
+    .logo-principal{
+        margin-top: 3rem;
+    }
+}

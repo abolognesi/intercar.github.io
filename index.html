@@ -11,10 +11,12 @@
     <header>
       <nav class="navbar fixed-top">
         <div class="container">
+          <div class="col-xs-8 col-sm-8 col-md-4 logo-principal">
           <a class="navbar-brand" href="#">
-            <img src="img/logo-intercarl.png" alt="Intercarl" width="100%">
+            <img src="img/logo-intercarl.png" alt="Intercarl">
           </a>
-          <div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-8 text-end botonera">
             <a class="logos-header" href="#" target="_blank" rel="facebook Intercarl">
               <img src="img/facebook.png" alt="facebook">
             </a>
@@ -28,56 +30,52 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <img src="img/logo-intercarl.png" alt="Intercarl">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#historia">Historia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#empresas">Empresas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#wildbrake">WildBrake</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#undercar">Undercar</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#lineas">Líneas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </nav>
     </header>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <img src="img/logo-intercarl.png" alt="Intercarl">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#historia">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#empresas">Empresas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#wildbrake">WildBrake</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#undercar">Undercar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lineas">Líneas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main class="container-fluid">
-      <a href="http://" target="_blank" rel="whatsapp" class="whatsapp">
-        <img src="img/wp.png" alt="whatsapp">
-      </a>
       <section id="carouselCars" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/car-home.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item active" style="background-image: url('img/car-home.jpg');">
+            <div class="carousel-caption">
               <h5>MÁS SOLUCIONES
                 PARA EL MERCADO
                 DE AUTOPARTES</h5>
               <p>Una alianza estratégica formada
                 por empresas de reconocida
                 trayectoria.</p>
-              <a href="#" class="btn btn-light" role="button">Quienes Somos</a>
+              <a href="#historia" class="btn btn-light" role="button">Quienes Somos</a>
             </div>
           </div>
         </div>
@@ -91,7 +89,7 @@
         </button>
       </section>
       <section class="container" id="historia">
-        <img src="img/nuestra-historia.png" alt="Nuestra Historia">
+        <img src="img/nuestra-historia.png" alt="Nuestra Historia" width="100%">
         <p>
           En 1998 luego de la Feria Automechanika de Frankfurt, un grupo de distribuidores regionales ubicados en distintas provincias de nuestra extensa República Argentina, con más de 50 años de experiencia en el rubro, fuerte presencia en sus zonas de influencia y previendo los Fuertes cambios de globalización que se avecinaban, se reúnen con el objetivo de aunar fuerzas para comercializar eficientemente marcas propias y de terceros con presencia nacional. Luego de tres años de trabajo arribando a un acuerdo unánime, en el año 2001. Así es como se constituye Intercar Autopartes Argentina S.A. dándole nacimiento a las marcas propias Wildbrake, Wildspark, WildLub, Wildten, Undercar y Enerbat. 
           <br><br>
@@ -109,7 +107,7 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
             </div>  
           </article>
           <article class="col-sm-12 col-md-7 mision">
-            <img src="img/imagen-mision.png" alt="Misión" width="100%">
+            <img src="img/imagen-mision.png" alt="Misión">
             <div>
               <h4>Misión</h4>
               <p>Buscamos representar y distribuir marcas líderes, así como nuestras propias marcas y aquellas de terceros, ofreciendo soluciones comerciales que satisfagan las necesidades específicas del mercado argentino. Nos enfocamos en crear sinergias y aprovechar la escala para brindar productos y servicios de alta calidad que optimicen el desempeño y la seguridad. Buscamos promover la colaboración sustentable y construyendo relaciones sólidas y de confianza con nuestros socios y clientes. </p>  
@@ -119,46 +117,48 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
       </section>
       <section id="empresas" class="container">
         <div class="row">
-          <article class="col-sm-12 col-md-6">
-            <img src="img/7-grandes-empresas.png" alt="7 Grandes Empresas">
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/10-depositos.png" alt="10 Depósitos">
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/logo-distrisuper.png" alt="Distrisuper">
-            <p><img src="img/icono-maps.png" alt=""> LA PAMPA | MAR DEL PLATA</p>
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/logo-juma.png" alt="JUMA">
-            <p><img src="img/icono-maps.png" alt=""> NEUQUÉN</p>
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/logo-oeschte.png" alt="Oechsle">
-            <p><img src="img/icono-maps.png" alt=""> CÓRDOBA</p>
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/logo-megaparts.png" alt="Megaparts">
-            <p><img src="img/icono-maps.png" alt=""> BAHÍA BLANCA</p>
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/logo-nf.png" alt="Nestor A. Fazio">
-            <p><img src="img/icono-maps.png" alt=""> CÓRDOBA</p>
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/logo-badaloni.png" alt="Guido Badaloni">
-            <p><img src="img/icono-maps.png" alt=""> MENDOZA</p>
-          </article>
-          <article class="col-sm-none col-md-6">
-          </article>
-          <article class="col-sm-12 col-md-6">
-            <img src="img/logo-racer.png" alt="Distribuidora Racer">
-            <p><img src="img/icono-maps.png" alt=""> CHACO</p>
-          </article>
+          <div class="col-sm-12 col-md-6">
+            <article>
+              <img src="img/7-grandes-empresas.png" class="logos-empresas" alt="7 Grandes Empresas">
+            </article>
+            <article>
+              <img src="img/logo-distrisuper.png" alt="Distrisuper">
+              <p><img src="img/icono-maps.png" alt=""> LA PAMPA | MAR DEL PLATA</p>
+            </article>
+            <article>
+              <img src="img/logo-oeschte.png" alt="Oechsle">
+              <p><img src="img/icono-maps.png" alt=""> CÓRDOBA</p>
+            </article>
+            <article>
+              <img src="img/logo-nf.png" alt="Nestor A. Fazio">
+              <p><img src="img/icono-maps.png" alt=""> CÓRDOBA</p>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <article>
+              <img src="img/10-depositos.png" class="logos-empresas" alt="10 Depósitos" id="depositos">
+            </article>
+            <article>
+              <img src="img/logo-juma.png" alt="JUMA">
+              <p><img src="img/icono-maps.png" alt=""> NEUQUÉN</p>
+            </article>
+            <article>
+              <img src="img/logo-megaparts.png" alt="Megaparts">
+              <p><img src="img/icono-maps.png" alt=""> BAHÍA BLANCA</p>
+            </article>
+            <article class="badaloni">
+              <img src="img/logo-badaloni.png" alt="Guido Badaloni">
+              <p><img src="img/icono-maps.png" alt="mendoza"> MENDOZA</p>
+            </article>
+            <article>
+              <img src="img/logo-racer.png" alt="Distribuidora Racer">
+              <p><img src="img/icono-maps.png" alt=""> CHACO</p>
+            </article>
+          </div>
         </div>
       </section>
       <section id="nuestras-marcas" class="container">
-        <img src="img/nuestras-marcas.png" alt="Nuestras Marcas">
+        <img src="img/nuestras-marcas.png" alt="Nuestras Marcas" width="100%">
         <img src="img/wildbrake.png" id="wildbrake" alt="WildBrake">
         <div class="row wildbrake">
           <article class="col-sm-12 col-md-6">
@@ -303,19 +303,19 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
       <section class="row">
         <div class="col-sm-12 col-md-6">
           <div class="row">
-            <div class="col-4"></div>
-            <ul class="col-4">
+            <div class="col-md-4 sm-none"></div>
+            <ul class="col-sm-6 col-md-4">
               <li><a href="#historia">Historia</a></li>
               <li><a href="#mision-vision">Misión | Visión</a></li>
               <li><a href="#empresas">Empresas</a></li>
             </ul>
-            <ul class="col-4">
+            <ul class="col-sm-6 col-md-4">
               <li><a href="#nuestras-marcas">Nuestras marcas</a></li>
               <li><a href="#lineas">Líneas</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <div class="col-4"></div>
-            <div class="col-8">
+            <div class="col-md-4 sm-none"></div>
+            <div class="col-sm-12 col-md-8">
               <br><br>
               <a href="https://facebook.com" target="_blank" rel="facebook"><img src="img/footer-facebook.png" alt="facebook"></a>
               <a href="https://instagram.com" target="_blank" rel="instagram"><img src="img/footer-instagram.png" alt="instagram"></a><br>
