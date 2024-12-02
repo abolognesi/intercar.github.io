@@ -182,6 +182,12 @@ img#wildbrake{
     margin-bottom: 5rem;
     width: 35%;
 }
+.wildbrake{
+    display: flex;
+}
+.wildbrake-mobile{
+    display: none;
+}
 .wildbrake > article{
     padding: 0;
 }
@@ -448,6 +454,12 @@ footer a:hover{
     }
     .undercar > article{
         padding: 1rem 5rem;
+    }
+    .wildbrake{
+        display: none;
+    }
+    .wildbrake-mobile{
+        display: block;
     }
     img#wildbrake{
         width: 70%;
