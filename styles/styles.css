@@ -58,17 +58,11 @@ body{
     right: 27rem;
     z-index: 10;
 }
-.carousel-item{
+#carouselCars .carousel-item{
     min-height: 89vh;
     background-position: center;
     background-size: cover;
 }
-/*.carousel-control-prev {
-    left: 10rem;
-}
-.carousel-control-next {
-    right: 20rem;
-}*/
 .carousel-control-next-icon, .carousel-control-prev-icon {
     height: 3rem;
     width: 3rem;
@@ -227,6 +221,7 @@ article.a-left{
     background-color: var(--green-color);
     padding: 5rem 10rem;
     text-align: center;
+    min-height: 20rem;
 }
 #lineas > img{
     width: 90%;
@@ -359,18 +354,18 @@ footer a:hover{
         width: 100vw;
         padding: 5% 0 0 5%;
     }
-    .carousel-item{
+    #carouselCars .carousel-item{
         min-height: 75vh;
     }
     .carousel-caption > p{
-        padding-right: 35%;
+        padding-right: 20%;
         font-weight: 300;
         font-size: 1.3rem;
     }
     .carousel-caption > h5{
-        width: 25rem;
-        font-size: 2.4rem;
-        margin-top: 18vh;
+        width: 100%;
+        font-size: 2rem;
+        margin-top: 20vh;
     }
     .navbar-brand{
         padding-top: 1rem;
@@ -395,7 +390,7 @@ footer a:hover{
         text-transform: uppercase;
         margin-top: 3rem;
         margin-left: 2rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     #historia > p{
         padding: 2rem;
@@ -414,20 +409,23 @@ footer a:hover{
         width: 100%;
     }
     .logos-empresas{
-        height: 10rem;
+        height: 6rem;
         margin: 2rem;
     }
     #empresas > div > div > article{
         margin-top: 0;
-        padding: 2rem 4rem;
+        padding: 1rem 4rem;
     }
     #empresas > div > div > article > img{
         width: 95%;
     }
     #empresas > div > div > article > p {
         margin-top: 2rem;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         font-weight: 300;
+    }
+    #empresas > div > div > article > p > img{
+        width: 0.9rem;
     }
     #oechsle > img{
         width: 75% !important;
@@ -483,7 +481,7 @@ footer a:hover{
     }
     #lineas > h2{ 
         padding: 1rem 0.5rem;
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     #contacto {
         padding: 4rem 2rem;

@@ -65,7 +65,7 @@
       </div>
     </div>
     <main class="container-fluid">
-      <section id="carouselCars" class="carousel slide" data-bs-ride="false">
+      <section id="carouselCars" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" style="background-image: url('img/car-home.jpg');">
             <div class="carousel-caption">
@@ -278,7 +278,70 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
       <section class="container" id="lineas">
         <h2>PRINCIPALES LÍNEAS <br>
           QUE SE COMERCIALIZAN</h2>
-        <img src="img/logos.png" alt="Líneas">
+        <img class="d-none d-md-block" src="img/logos.png" alt="Líneas">
+        <div id="carouselLogos" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <img src="img/logos/01-logo-ag.png" class="d-block w-100" alt="AG">
+                </div>
+                <div class="col-6">
+                  <img src="img/logos/02-logo-apex.png" class="d-block w-100" alt="APEX">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="img/logos/03-logo-autolite.png" class="d-block w-100" alt="autolite">
+                </div>
+                <div class="col-6">
+                  <img src="img/logos/04-logo-buffalo.png" class="d-block w-100" alt="buffalo">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="img/logos/05-logo-capemi.png" class="d-block w-100" alt="capemi">
+                </div>
+                <div class="col-6">
+                  <img src="img/logos/06-logo-castrol.png" class="d-block w-100" alt="castrol">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="img/logos/07-logo-champion.png" class="d-block w-100" alt="champion">
+                </div>
+                <div class="col-6">
+                  <img src="img/logos/08-logo-euga.png" class="d-block w-100" alt="euga">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="img/logos/09-logo-etma.png" class="d-block w-100" alt="etma">
+                </div>
+                <div class="col-6">
+                  <img src="img/logos/10-logo-fisma.png" class="d-block w-100" alt="fisma">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="img/logos/11-logo-fram.png" class="d-block w-100" alt="fram">
+                </div>
+                <div class="col-6">
+                  <img src="img/logos/12-logo-fremec.png" class="d-block w-100" alt="fremec">
+                </div>
+              </div>
+            </div>
+        </div>
       </section>
       <section class="container" id="contacto">
         <h2>Contacto</h2>
@@ -399,7 +462,7 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
       $(window).scroll(function(){
-	      $('nav').toggleClass('bg-green', $(this).scrollTop() > 50);
+        $('nav').toggleClass('bg-green', $(this).scrollTop() > 50);
       });
     </script>
   </body>
