@@ -130,22 +130,22 @@ body{
 .mision img{
     max-height: 13rem;
 }
-#mision-vision > div > article > div{
+.mision-vision > div > article > div{
     padding: 2rem;
 }
-#mision-vision > div > article > div > h4{
+.mision-vision > div > article > div > h4{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2.3rem;
     margin-bottom: 2rem;
 }
-#mision-vision > div > article > div > p{
+.mision-vision > div > article > div > p{
     width: 20rem;
 }
-#mision-vision > div > article{
+.mision-vision > div > article{
     padding: 0;
 }
-#mision-vision > div > article:nth-child(2){
+.mision-vision > div > article:nth-child(2){
     background-color: var(--green-color);
 }
 /*---------MISION-VISION-------*/
@@ -350,7 +350,16 @@ footer a:hover{
 }
 @media (max-width: 575.98px) {
     .carousel-caption{
-        width: 70vw;
+        width: 100vw;
+        padding: 5% 0 0 5%;
+    }
+    .carousel-item{
+        min-height: 75vh;
+    }
+    .carousel-caption > p{
+        padding-right: 35%;
+        font-weight: 300;
+        font-size: 1.3rem;
     }
     .carousel-caption > h5{
         width: 25rem;
@@ -371,8 +380,74 @@ footer a:hover{
     .logos-header, .logos-header-last{
         display: none;
     }
+    #historia{
+        margin-top: 0;
+        padding: 0;
+    }
+    #historia > h2{
+        color: white;
+        text-transform: uppercase;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+    #historia > p{
+        padding: 2rem;
+        width: 100%;
+    }
+    .mision-vision > div > article:nth-child(1){
+        background-color: var(--green-color);
+    }
+    .mision-vision > div > article:nth-child(2){
+        background-color: var(--grey-color);
+    }
+    .mision-vision > div > article > div {
+        padding: 3rem;
+    }
+    .mision-vision > div > article > div > p{
+        width: 100%;
+    }
+    .logos-empresas{
+        height: 10rem;
+        margin: 2rem;
+    }
+    #empresas > div > div > article{
+        margin-top: 0;
+        padding: 2rem 4rem;
+    }
+    #empresas > div > div > article > img{
+        width: 95%;
+    }
+    #empresas > div > div > article > p {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    #oechsle > img{
+        width: 75% !important;
+    }
+    #megaparts > img{
+        width: 85% !important;
+    }
+    .badaloni > img{
+        width: 75% !important;
+    }
     #depositos{
         width: 100%;
+    }
+    #nuestras-marcas{
+        padding: 0;
+    }
+    #nuestras-marcas > h2{
+        color: white;
+        background-color: var(--green-color);
+        text-transform: uppercase;
+        padding: 2rem 3rem;
+        text-align: left;
+        font-size: 2.8em;
+    }
+    .undercar > article{
+        padding: 1rem 5rem;
     }
     img#wildbrake{
         width: 70%;
@@ -401,14 +476,42 @@ footer a:hover{
     #contacto {
         padding: 4rem 2rem;
     }
+    #contacto h2{
+        font-size: 2.8rem;
+    }
+    #contacto > form > div.a-right{
+        text-align: left;
+    }
+    #contacto input[type="submit"]{
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
     .sm-none{
         display: none;
     }
     .botonera{
         margin-top: -6.1rem;
-        margin-right: 5rem;
+        margin-right: -1rem;
     }
     .logo-principal{
         margin-top: 3rem;
     }
+    footer{
+       padding: 0 !important; 
+    }
+    footer ul {
+        width: 50% !important;
+        padding-left: 3rem !important;
+    }
+    footer .redes{
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+    }
+    footer .redes img{
+        width: 3rem;
+    }
+    footer .redes a{
+        margin-right: 1rem;
+    }
+
 }

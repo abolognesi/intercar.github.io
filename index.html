@@ -79,25 +79,27 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </section>
       <section class="container" id="historia">
-        <img src="img/nuestra-historia.png" alt="Nuestra Historia" width="100%">
+        <img class="d-none d-md-block" src="img/nuestra-historia.png" alt="Nuestra Historia" width="100%">
+        <img class="d-block d-md-none" src="img/nuestra-historia-mobile.png" alt="Nuestra Historia" width="100%">
+        <h2 class="d-block d-md-none">Nuestra Historia</h2>
         <p>
           En 1998 luego de la Feria Automechanika de Frankfurt, un grupo de distribuidores regionales ubicados en distintas provincias de nuestra extensa República Argentina, con más de 50 años de experiencia en el rubro, fuerte presencia en sus zonas de influencia y previendo los Fuertes cambios de globalización que se avecinaban, se reúnen con el objetivo de aunar fuerzas para comercializar eficientemente marcas propias y de terceros con presencia nacional. Luego de tres años de trabajo arribando a un acuerdo unánime, en el año 2001. Así es como se constituye Intercar Autopartes Argentina S.A. dándole nacimiento a las marcas propias Wildbrake, Wildspark, WildLub, Wildten, Undercar y Enerbat. 
           <br><br>
 En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, posicionando las marcas propias en todo el Mercado nacional. En 2011 bajo el nombrea de Megaparts Autopiezas queda inaugurada el primer depósito ubicado estratégicamente en la ciudad de Bahía Blanca, Provincia de Buenos Aires para abastecer el sur de de nuestro país, consolidando una vez más nuestra alianza y esfuerzo en trabajar al unísono.
         </p>
-        <img src="img/historia.png" alt="Historia">
+        <img class="d-none d-md-block" src="img/historia.png" alt="Historia">
       </section>
-      <section id="mision-vision" class="container">
+      <section class="mision-vision d-none d-md-block" class="container">
         <div class="row">
           <article class="col-sm-12 col-md-5 vision">
             <img src="img/imagen-vision.png" alt="Visión">
@@ -115,17 +117,39 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
           </article>
         </div>
       </section>
+      <section class="mision-vision d-block d-md-none" class="container">
+        <div class="row">
+          <article class="col-sm-12 col-md-7 mision">
+            <img src="img/imagen-mision.png" alt="Misión">
+            <div>
+              <h4>Misión</h4>
+              <p>Buscamos representar y distribuir marcas líderes, así como nuestras propias marcas y aquellas de terceros, ofreciendo soluciones comerciales que satisfagan las necesidades específicas del mercado argentino. Nos enfocamos en crear sinergias y aprovechar la escala para brindar productos y servicios de alta calidad que optimicen el desempeño y la seguridad. Buscamos promover la colaboración sustentable y construyendo relaciones sólidas y de confianza con nuestros socios y clientes. </p>  
+            </div>  
+          </article> 
+          <article class="col-sm-12 col-md-5 vision">
+            <img src="img/imagen-vision.png" alt="Visión">
+            <div>
+              <h4>Visión</h4>
+              <p>Estamos comprometidos en liderar el mercado argentino como el principal proveedor de soluciones comerciales, creando sinergias efectivas que impulsen el crecimiento y la innovación. Nos comprometemos a ofrecer una gama completa de productos y servicios escalables, adaptándose a las condiciones de cada región del país, para optimizar el desempeño y la seguridad, promoviendo la colaboración sustentable y eficiente con nuestros socios y clientes.</p>  
+            </div>  
+          </article>
+        </div>
+      </section>
+      <section class="d-block d-md-none">
+          <img src="img/7-grandes-empresas.png" class="logos-empresas" alt="7 Grandes Empresas">
+          <img src="img/10-depositos.png" class="logos-empresas" alt="10 Depósitos">
+      </section>
       <section id="empresas" class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <article>
+            <article class="d-none d-md-block">
               <img src="img/7-grandes-empresas.png" class="logos-empresas" alt="7 Grandes Empresas">
             </article>
             <article>
               <img src="img/logo-distrisuper.png" alt="Distrisuper">
               <p><img src="img/icono-maps.png" alt=""> LA PAMPA | MAR DEL PLATA</p>
             </article>
-            <article>
+            <article id="oechsle">
               <img src="img/logo-oeschte.png" alt="Oechsle">
               <p><img src="img/icono-maps.png" alt=""> CÓRDOBA</p>
             </article>
@@ -135,14 +159,14 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
             </article>
           </div>
           <div class="col-sm-12 col-md-6">
-            <article>
+            <article class="d-none d-md-block">
               <img src="img/10-depositos.png" class="logos-empresas" alt="10 Depósitos" id="depositos">
             </article>
             <article>
               <img src="img/logo-juma.png" alt="JUMA">
               <p><img src="img/icono-maps.png" alt=""> NEUQUÉN</p>
             </article>
-            <article>
+            <article id="megaparts">
               <img src="img/logo-megaparts.png" alt="Megaparts">
               <p><img src="img/icono-maps.png" alt=""> BAHÍA BLANCA</p>
             </article>
@@ -158,9 +182,10 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
         </div>
       </section>
       <section id="nuestras-marcas" class="container">
-        <img src="img/nuestras-marcas.png" alt="Nuestras Marcas" width="100%">
+        <h2 class="d-block d-md-none">Nuestras Marcas</h2>
+        <img class="d-none d-md-block" src="img/nuestras-marcas.png" alt="Nuestras Marcas" width="100%">
         <img src="img/wildbrake.png" id="wildbrake" alt="WildBrake">
-        <div class="row wildbrake">
+        <div class="row wildbrake d-none d-md-block">
           <article class="col-sm-12 col-md-6">
             <img src="img/disco-de-frenos.png" alt="Discos para frenos">
           </article>
@@ -197,6 +222,43 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
             <p>Una amplia variedad de líquidos de frenos,  de alto rendimiento, diseñados para soportar altas temperaturas y garantizar una respuesta de frenado precisa. Estos líquidos proporcionan máxima protección contra la corrosión y mantienen la eficacia del sistema en condiciones extremas.</p>
           </article>
         </div>
+        <div class="row wildbrake d-block d-md-none">
+          <article class="col-sm-12 col-md-6">
+            <img src="img/disco-de-frenos.png" alt="Discos para frenos">
+          </article>
+          <article class="col-sm-12 col-md-6 a-right">
+            <h4>DISCOS PARA FRENOS</h4>
+            <p>Discos de freno de alta calidad  que garantiza una excelente resistencia al desgaste y a las altas temperaturas. Ofrecen un rendimiento óptimo en situaciones de frenado intenso reduciendo las vibraciones y el ruido para una experiencia de conducción más segura y confortable.</p>
+          </article>
+          <article class="col-sm-12 col-md-6">
+            <img src="img/pastillas-para-freno.png" alt="Pastillas para frenos">
+          </article>
+          <article class="col-sm-12 col-md-6 a-left">
+            <h4>PASTILLAS PARA FRENOS</h4>
+            <p>Excelente poder de frenado, durabilidad y resistencia al calor. Estas pastillas proporcionan una respuesta rápida y consistente, reduciendo el desgaste del disco y minimizando el ruido y las vibraciones, lo que garantiza una frenada segura y silenciosa en todo tipo de condiciones.</p>
+          </article>
+          <article class="col-sm-12 col-md-6">
+            <img src="img/repuestos-para-freno.png" alt="Repuestos para frenos">
+          </article>
+          <article class="col-sm-12 col-md-6 a-right">
+            <h4>REPUESTOS PARA FRENOS</h4>
+            <p>Nuestra línea de repuestos para ofrecen alta calidad garantizan un rendimiento seguro y duradero, con materiales resistentes al desgaste que optimizan la eficacia de frenado y prolongan la vida útil del sistema.</p>
+          </article>
+          <article class="col-sm-12 col-md-6">
+            <img src="img/liquido-para-frenos.png" alt="Líquido para frenos">
+          </article>
+          <article class="col-sm-12 col-md-6 a-left">
+            <h4>LÍQUIDO PARA FRENOS</h4>
+            <p>Nuestra misión es representar y distribuir marcas líderes, así como nuestras propias marcas y aquellas de terceros, ofreciendo soluciones comerciales que satisfagan , así como nuestras propias marcas y aquellas de terceros, ofreciendo soluciones comerciales que satis</p>
+          </article>
+          <article class="col-sm-12 col-md-6">
+            <img src="img/liquido-anticongelante.png" alt="Líquido anticongelante">
+          </article>
+          <article class="col-sm-12 col-md-6 a-right">
+            <h4>LÍQUIDO ANTICONGELANTE</h4>
+            <p>Una amplia variedad de líquidos de frenos,  de alto rendimiento, diseñados para soportar altas temperaturas y garantizar una respuesta de frenado precisa. Estos líquidos proporcionan máxima protección contra la corrosión y mantienen la eficacia del sistema en condiciones extremas.</p>
+          </article>
+        </div>        
         <img id="undercar" src="img/undercar.png" alt="Undercar">
         <div class="row undercar">
           <article class="col-sm-12 col-md-6 text-end">
@@ -315,11 +377,16 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
               <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="col-md-4 sm-none"></div>
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-8 d-none d-md-block">
               <br><br>
               <a href="https://facebook.com" target="_blank" rel="facebook"><img src="img/footer-facebook.png" alt="facebook"></a>
               <a href="https://instagram.com" target="_blank" rel="instagram"><img src="img/footer-instagram.png" alt="instagram"></a><br>
               <a href="https://www.intercar.com.ar" target="_blank" rel="www.intercar.com.ar">www.intercar.com.ar</a>
+            </div>
+            <div class="col-sm-12 col-md-8 d-block d-md-none redes">
+              <br><br>
+              <a href="https://facebook.com" target="_blank" rel="facebook"><img src="img/footer-facebook-mobile.png" alt="facebook"></a>
+              <a href="https://instagram.com" target="_blank" rel="instagram"><img src="img/footer-instagram-mobile.png" alt="instagram"></a>
             </div>
           </div>
         </div>
