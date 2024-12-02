@@ -188,22 +188,22 @@ img#wildbrake{
 .wildbrake-mobile{
     display: none;
 }
-.wildbrake > article{
+.wildbrake > article, .wildbrake-mobile > article{
     padding: 0;
 }
-.wildbrake > article > h4{
+.wildbrake > article > h4, .wildbrake-mobile > article > h4{
     color: var(--green-color);
     text-align: left;
     font-weight: 500;
     font-size: 1.3rem;
 }
-.wildbrake > article > p{
+.wildbrake > article > p, .wildbrake-mobile > article > p{
     padding-top: 1rem;
     color: white;
     text-align: left;
     font-weight: 300;
 }
-.wildbrake > article > img{
+.wildbrake > article > img, .wildbrake-mobile > article > img{
     width: 100%;
 }
 article.a-right{
@@ -344,7 +344,7 @@ footer a:hover{
     article.a-left {
         padding: 3.5rem 4.5rem 0 1rem;
     }
-    .wildbrake > article > h4 {
+    .wildbrake > article > h4, .wildbrake-mobile > article > h4{
         font-size: 1.2rem;
     }
     .offcanvas{
