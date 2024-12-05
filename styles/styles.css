@@ -21,6 +21,7 @@ body{
 }
 .navbar > .container{
     margin-top: 0;
+    padding-right: 0;
 }
 .navbar-toggler{
     border: none;
