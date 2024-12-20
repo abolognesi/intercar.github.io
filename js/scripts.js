@@ -52,3 +52,50 @@ $(window).scroll(function(){
     });
 });
 AOS.init();
+document.querySelectorAll('.offcanvas a.nav-link').forEach(link => {
+    link.addEventListener('click', function (event) {
+        document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+        // Cerrar el offcanvas
+      const offcanvas = document.querySelector('.offcanvas.show');
+      if (offcanvas) {
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+        bsOffcanvas.hide();
+      }
+      
+      // Moverse al ID correspondiente
+      const target = this.getAttribute('href');
+      if (target.startsWith('#')) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado
+        const element = document.querySelector(target);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' }); // Scroll suave
+        }
+      }
+    });
+  });
+
+  // Obtener todos los enlaces de navegación
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+// Escuchar el evento de desplazamiento
+window.addEventListener('scroll', () => {
+  let current = '';
+  
+  // Iterar sobre cada enlace
+  navLinks.forEach(link => {
+    const section = document.querySelector(link.getAttribute('href'));
+    // Comprobar si la sección está en la ventana del navegador
+    if (section.offsetTop <= window.scrollY + 100 && section.offsetTop + section.offsetHeight > window.scrollY + 100) {
+      current = link.getAttribute('href'); // Establecer el enlace actual
+    }
+  });
+
+  // Añadir la clase 'active' al enlace correspondiente
+  navLinks.forEach(link => {
+    link.classList.remove('active'); // Eliminar 'active' de todos los enlaces
+    if (link.getAttribute('href') === current) {
+      link.classList.add('active'); // Añadir 'active' al enlace actual
+    }
+  });
+});

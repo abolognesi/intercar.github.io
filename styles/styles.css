@@ -50,6 +50,9 @@ body{
 .offcanvas{
     background-color: var(--green-color);
 }
+a.nav-link.active{
+    color: white !important;
+}
 /*---------HEADER-------*/
 /*---------CAROUSEL-------*/
 .whatsapp{
@@ -183,10 +186,10 @@ body{
 }
 /*---------EMPRESAS-------*/
 /*---------NUESTRAS-MARCAS-------*/
-#nuestras-marcas{
+#nuestras-marcas, #wildbrake{
     text-align: center;
 }
-img#wildbrake{
+img#wildbrake-img{
     margin-top: 0rem;
     margin-bottom: 2rem;
     width: 35%;
@@ -225,6 +228,9 @@ article.a-left{
     max-height: 22rem;
 }
 #undercar{
+    text-align: center;
+}
+#undercar-img{
     margin-top: 4rem;
     margin-bottom: 3rem;
 }
@@ -503,7 +509,7 @@ footer a:hover{
     #depositos{
         width: 100%;
     }
-    #nuestras-marcas{
+    #nuestras-marcas, #wildbrake{
         padding: 0;
     }
     #nuestras-marcas > h2{
@@ -523,7 +529,7 @@ footer a:hover{
     .wildbrake-mobile{
         display: block;
     }
-    img#wildbrake{
+    img#wildbrake-img{
         width: 70%;
         margin-top: 3rem;
     }
@@ -535,7 +541,7 @@ footer a:hover{
         padding: 4.5rem 4.5rem 0 4rem;
         max-height: 46rem;
     }
-    img#undercar{
+    img#undercar-img{
         width: 70%;
     }
     .undercar > article > img{
@@ -561,11 +567,20 @@ footer a:hover{
         font-size: 1.1rem;
         font-weight: 300;
     }
+    .navbar-brand img{
+        width: 40%;
+    }
+    .offcanvas-header{
+        padding-top: 1rem;
+    }
+    .offcanvas-header img{
+        width: 40%;
+    }
     .sm-none{
         display: none;
     }
     .navbar-toggler{
-        margin-left: 6rem;
+        margin-left: 4rem;
     }
     .botonera{
         margin-top: -6.1rem;

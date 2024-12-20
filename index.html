@@ -14,7 +14,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <header>
+    <header id="inicio">
       <nav class="navbar fixed-top d-none d-md-block">
         <div class="container">
           <div class="col-xs-8 col-md-4 logo-principal">
@@ -59,25 +59,25 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" data-bs-dismiss="offcanvas" aria-current="page" href="#inicio">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-dismiss="offcanvas" href="#historia">Historia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#empresas">Empresas</a>
+            <a class="nav-link" data-bs-dismiss="offcanvas" href="#empresas">Empresas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#wildbrake">WildBrake</a>
+            <a class="nav-link" data-bs-dismiss="offcanvas" href="#wildbrake">WildBrake</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#undercar">Undercar</a>
+            <a class="nav-link" data-bs-dismiss="offcanvas" href="#undercar">Undercar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#lineas">Líneas</a>
+            <a class="nav-link" data-bs-dismiss="offcanvas" href="#lineas">Líneas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
+            <a class="nav-link" data-bs-dismiss="offcanvas" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -217,7 +217,9 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
       <section id="nuestras-marcas" class="container">
         <h2 class="d-block d-md-none">Nuestras Marcas</h2>
         <img class="d-none d-md-block" src="img/nuestras-marcas.png" alt="Nuestras Marcas" width="100%" data-aos="fade-up" data-aos-duration="3000">
-        <img src="img/wildbrake.png" id="wildbrake" alt="WildBrake" data-aos="fade-left" data-aos-duration="3000">
+      </section>
+      <section id="wildbrake" class="container">
+        <img src="img/wildbrake.png" id="wildbrake-img" alt="WildBrake" data-aos="fade-left" data-aos-duration="3000">
         <div class="row wildbrake">
           <article class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="2000">
             <img src="img/disco-de-frenos.png" alt="Discos para frenos">
@@ -291,8 +293,10 @@ En las ferias Automechanika de 2006 y 2008 se expuso con un stand de 120 m2, pos
             <h4>LÍQUIDO ANTICONGELANTE</h4>
             <p>Una amplia variedad de líquidos de frenos,  de alto rendimiento, diseñados para soportar altas temperaturas y garantizar una respuesta de frenado precisa. Estos líquidos proporcionan máxima protección contra la corrosión y mantienen la eficacia del sistema en condiciones extremas.</p>
           </article>
-        </div>        
-        <img id="undercar" src="img/undercar.png" alt="Undercar" data-aos="fade-up" data-aos-duration="2000">
+        </div>
+        </section>
+        <section id="undercar"  class="container">        
+        <img id="undercar-img" src="img/undercar.png" alt="Undercar" data-aos="fade-up" data-aos-duration="2000">
         <div class="row undercar">
           <article class="col-sm-12 col-md-4" data-aos="fade-right" data-aos-duration="2000">
             <img src="img/wild-power.jpg" alt="WILDPOWER">
