@@ -51,3 +51,4 @@ $(window).scroll(function(){
         });
     });
 });
+AOS.init();

@@ -76,20 +76,32 @@ body{
     width: 36vw;
     background-color: var(--green-color);
     padding: 10% 0 0 20%;
+
+    animation: fadeInLeft;
+    animation-duration: 1.5s; 
 }
 .carousel-caption > h5{
     font-size: 3.4rem;
     text-transform: uppercase;
     width: 40rem;
     font-weight: bold;
+
+    animation: fadeInLeft;
+    animation-duration: 2s; 
 }
 .carousel-caption > p{
     font-size: 1.2rem;
     color: var(--grey-color);
     margin-top: 2rem;
+
+    animation: fadeInUp;
+    animation-duration: 2.5s; 
 }
 .carousel-caption > a{
     margin-top: 3rem;
+
+    animation: fadeInUp;
+    animation-duration: 2.5s; 
 }
 /*---------CAROUSEL-------*/
 /*---------HISTORY-------*/
@@ -175,8 +187,8 @@ body{
     text-align: center;
 }
 img#wildbrake{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
     width: 35%;
 }
 .wildbrake{
@@ -213,8 +225,8 @@ article.a-left{
     max-height: 22rem;
 }
 #undercar{
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 .undercar > article{
     margin-bottom: 2.5rem;
@@ -236,9 +248,9 @@ article.a-left{
 #lineas > h2{
     font-weight: bold;
     color: var(--grey-color);
-    font-size: 3rem;
+    font-size: 2.1rem;
     text-align: left;
-    padding-left: 4rem;
+    padding-left: 1rem;
 }
 /*---------LINEAS-------*/
 /*---------CONTACTO-------*/
@@ -394,7 +406,7 @@ footer a:hover{
         display: flex;
     }
     .offcanvas-header .btn-close{
-        margin-left: calc(5.5 * var(--bs-offcanvas-padding-x));
+        margin-left: calc(2.5 * var(--bs-offcanvas-padding-x));
     }
     .carousel-caption{
         width: 100vw;
@@ -425,7 +437,7 @@ footer a:hover{
         padding-left: 0;
     }
     .offcanvas.offcanvas-end{
-        right: auto;
+        width: 80%;
     }
     .logos-header, .logos-header-last{
         display: none;
@@ -460,6 +472,9 @@ footer a:hover{
     .logos-empresas{
         width: 75%;
         margin: 2rem;
+    }
+    .repuestos-frenos{
+        margin-top: -3.5rem;
     }
     #empresas > div > div > article{
         margin-top: 0;
@@ -510,6 +525,7 @@ footer a:hover{
     }
     img#wildbrake{
         width: 70%;
+        margin-top: 3rem;
     }
     article.a-right{
         padding: 1.5rem 4rem 0 4.5rem;
@@ -548,12 +564,12 @@ footer a:hover{
     .sm-none{
         display: none;
     }
+    .navbar-toggler{
+        margin-left: 6rem;
+    }
     .botonera{
         margin-top: -6.1rem;
         margin-right: -1rem;
-    }
-    .logo-principal{
-        margin-top: 3rem;
     }
     footer{
        padding: 0 !important; 
